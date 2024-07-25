@@ -1,0 +1,34 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Upload Document</title>
+</head>
+<body>
+    <div>
+        <h3>Upload single image</h3>
+        <form action="/profile", method="post", enctype="multipart/form-data">
+            <input type="file", name="profilePic"/>
+            <button type="submit">Upload</button>
+        </form>  
+    </div>
+    <div>
+        <h3>Upload  multiple image</h3>
+        <form action="/upload", method="post", enctype="multipart/form-data">
+            <input type="file", name="files" multiple/>
+            <button type="submit">Upload</button>
+        </form>  
+    </div>
+
+    <div>
+        <h3>Upload fields image</h3>
+        <form action="/photos/upload", method="post", enctype="multipart/form-data">
+            <input type="file", name="avatar"/><br><br>
+            <input type="file", name="gallery"/>
+            <button type="submit">Upload</button>
+        </form>  
+    </div>
+      
+</body>
+</html>
